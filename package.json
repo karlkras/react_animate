@@ -1,10 +1,10 @@
 {
   "name": "react-animate",
   "version": "1.0.0",
-  "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Karl",
   "license": "ISC",
