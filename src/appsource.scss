@@ -1,0 +1,11 @@
+@mixin background-it($path) {
+    background-image:$path;
+    color:white;
+} 
+
+$image: url(/img/forest.jpg);
+$jumbo-text-color: white;
+
+.custom{
+    @include background-it($image);
+}
