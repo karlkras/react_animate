@@ -9,3 +9,13 @@ $jumbo-text-color: white;
 .custom{
     @include background-it($image);
 }
+
+.app-appear{
+    opacity: 0.01;
+}
+
+.app-appear-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
