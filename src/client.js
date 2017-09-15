@@ -9,7 +9,7 @@ class ClientComponent extends Component {
     render() {
         return(
             <Jumbotron 
-                className="-fluid text-xs-center custom" 
+                className="-fluid text-center custom"
                 containerFluid={true}
             >
                 <h1>
