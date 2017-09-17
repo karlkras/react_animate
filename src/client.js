@@ -12,17 +12,28 @@ class ClientComponent extends Component {
         super(params);
 
         this.onClick = this.onClick.bind(this);
+        this.onReset = this.onReset.bind(this);
 
-        this.state = { click: 0};
+        this.state = { click: 0, labels: []};
     }
 
 
     onClick(event) {
-        this.setState({click: this.state.click + 1});
+        let labels = this.state.labels.concat([this.state.click]);
+        this.setState({click: this.state.click + 1, labels: labels});
+    }
+
+    onReset(e) {
+        this.setState({click: 0, labels: []});
+
     }
 
 
     render() {
+        let buttons = this.state.labels.map((item, i) => {
+            return <Button key={i}>{item}</Button>
+
+        });
         return(
             <ReactCSSTransitionGroup
                 transitionName='app'
@@ -41,16 +52,24 @@ class ClientComponent extends Component {
                     <p>with Bootstrap and SASS</p>
                     <p>
                         <Button
+                            onClick = {this.onReset}
                             className='-primary'
-                            href="//02geek.com"
-                            target="_blank"
-                            label="This is a link, dammit!"
+                            //href="//02geek.com"
+                            //target="_blank"
+                            label="Reset!"
                         />
                         <Button
                             onClick={this.onClick}
-                            className='-danger'
-                            label="Discover Stuff" />
+                            className='-danger'>{this.state.click}</Button>
                     </p>
+                    <ReactCSSTransitionGroup
+                        transitionName='app'
+                        // transitionAppear={true}
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={508}
+                    >
+                    {buttons}
+                    </ReactCSSTransitionGroup>
                 </Jumbotron>
             </ReactCSSTransitionGroup>
         );

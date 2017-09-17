@@ -11,11 +11,32 @@ $jumbo-text-color: white;
 }
 
 .app-appear{
-    opacity: 0.01;
+    opacity:0.01;
+
+    &-active{
+        opacity:1;
+        transition: opacity 500ms ease-in;
+    }
 }
 
-.app-appear-active{
-    opacity: 1;
-    transition: opacity 500ms ease-in;
+
+.app-enter{
+    opacity:0.01;
+
+    &-active {
+        opacity:1;
+        transition: opacity 5s ease-in;
+    }
 }
+
+.app-leave{
+    opacity:1;
+
+    &-active{
+        opacity:0;
+        transition: opacity 500ms ease-out;
+    }
+}
+
+
 
