@@ -44,13 +44,12 @@ class ClientComponent extends Component {
                             className='-primary'
                             href="//02geek.com"
                             target="_blank"
-                            buttonText="This is a link, dammit!"
+                            label="This is a link, dammit!"
                         />
                         <Button
                             onClick={this.onClick}
                             className='-danger'
-                            buttonText={this.state.click}
-                        />
+                            label="Discover Stuff" />
                     </p>
                 </Jumbotron>
             </ReactCSSTransitionGroup>
