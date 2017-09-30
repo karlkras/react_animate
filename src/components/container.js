@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './button.scss';
+import '../styles/bootstrap/_core.scss';
 
 
 export default class Container extends Component {

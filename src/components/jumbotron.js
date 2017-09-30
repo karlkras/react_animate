@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Utils from './utils';
+import Utils from '../utilities/utils';
 import Container from './container';
 const STYLE_NAME = 'jumbotron';
-import './jumbotron.scss';
+import '../styles/bootstrap/jumbotron.scss';
 
 export default class Jumbotron extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Utils from './utils';
-import './button.scss';
+import Utils from '../utilities/utils';
+import '../styles/bootstrap/_core.scss';
 
 export default class Button extends Component {
     render() {

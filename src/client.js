@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Button from './bootstrap/button';
-import Jumbotron from './bootstrap/jumbotron';
+import Button from './components/button';
+import Jumbotron from './components/jumbotron';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import './appsource.scss';
-import './bootstrap/button.scss';
+import './styles/appsource.scss';
+import './styles/bootstrap/_core.scss';
 
 
 class ClientComponent extends Component {
